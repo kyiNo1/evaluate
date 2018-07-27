@@ -1,19 +1,22 @@
- //µ÷ÓÃ·½Ê½
+ //è°ƒç”¨æ–¹å¼
 $('#rating').rating({                              
-     mode: 'entire',   //entire ±íÊ¾Ò»¿ÅĞÇ£¬  half ±íÊ¾°ë¿Å£¬  qureter ±íÊ¾ËÄ·ÖÖ®Ò»¿Å                             
-     total:10, // ÏÔÊ¾µÄ×ÜĞÇÊı                                      
-     num: 0,    // Ä¬ÈÏµãÁÁµÄĞÇÊı                                    
-     readOnly: false,    // false ¿ÉÒÔÆÀ¼Û   true Ö»ÄÜ¿´²»ÄÜÆÀ                           
+     mode: 'entire',   //entire è¡¨ç¤ºä¸€é¢—æ˜Ÿï¼Œ  half è¡¨ç¤ºåŠé¢—ï¼Œ  qureter è¡¨ç¤ºå››åˆ†ä¹‹ä¸€é¢—                             
+     total:10, // æ˜¾ç¤ºçš„æ€»æ˜Ÿæ•°                                      
+     num: 0,    // é»˜è®¤ç‚¹äº®çš„æ˜Ÿæ•°                                    
+     readOnly: false,    // false å¯ä»¥è¯„ä»·   true åªèƒ½çœ‹ä¸èƒ½è¯„                           
      
   
     select:function(count,total){      
-         // count Êó±êÔÚµÚ¼¸ÆÀ¼¶ÉÏ                         
+         // count é¼ æ ‡åœ¨ç¬¬å‡ è¯„çº§ä¸Š                         
        console.log(count)             
         },                                 
    chosen:function(count,total){      
-        // count      Ñ¡ÖĞµÚ¼¸ÆÀ¼¶   
+        // count      é€‰ä¸­ç¬¬å‡ è¯„çº§   
     }         
                                                                     
  })
 
-github Ê¹ÓÃÊµ¼ù
+github ä½¿ç”¨å®è·µ
+
+
+æ¨¡æ‹Ÿè¿œç¨‹ä¿®æ”¹
