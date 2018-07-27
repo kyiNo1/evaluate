@@ -14,4 +14,6 @@ $('#rating').rating({
         // count      选中第几评级   
     }         
                                                                     
- })                                                 
+ })
+
+github 使用实践
