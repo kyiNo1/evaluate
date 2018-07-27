@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>evaluate</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+ <!--评价实现方式-->
+  <div class="rating" id="rating">
+      <!--<div class="rating-display"></div>-->
+      <!--<ul class="rating-mask">-->
+          <!--<li class="rating-item"></li>-->
+          <!--<li class="rating-item"></li>-->
+          <!--<li class="rating-item"></li>-->
+          <!--<li class="rating-item"></li>-->
+          <!--<li class="rating-item"></li>-->
+      <!--</ul>-->
+  </div>
+ <div class="rating" id="rating2">
+  </div>
+</body>
+<script src="js/rating.js"></script>
+<script>
+    $('#rating').rating({
+        mode: 'entire',
+        total:10,
+        num: 0,
+        readOnly: false,
+        chosen:function(count,total){
+
+            //$('#rating').rating('unbindEvent');
+        },
+    })
+    $('#rating2').rating({
+        mode: 'half',
+        total:7,
+        num: 2,
+        readOnly: false,
+        select:function(count,total){
+            // count 鼠标在第几评级上
+            console.log(count)
+        },
+        chosen:function(count,total){
+           // count      选中第几评级
+
+        },
+    })
+</script>
+</html>

@@ -1,0 +1,17 @@
+ //调用方式
+$('#rating').rating({                              
+     mode: 'entire',   //entire 表示一颗星，  half 表示半颗，  qureter 表示四分之一颗                             
+     total:10, // 显示的总星数                                      
+     num: 0,    // 默认点亮的星数                                    
+     readOnly: false,    // false 可以评价   true 只能看不能评                           
+     
+  
+    select:function(count,total){      
+         // count 鼠标在第几评级上                         
+       console.log(count)             
+        },                                 
+   chosen:function(count,total){      
+        // count      选中第几评级   
+    }         
+                                                                    
+ })                                                 
